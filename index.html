@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - My Coca Cola Brand</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- Introducing Three.js and related modules -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/TDSLoader.js"></script>
+</head>
+<body>
+    <header class="header">
+        <!--h2>My Soda Brand</h2>
+        <p>Interactive 3D Beverage Viewer</p-->
+
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">My Coca Cola Brand</a>
+                <ul class="nav-links">
+                    <li><a href="/" class="active"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+                    <li><a href="map.html"><i class="fas fa-map-marked-alt"></i>Global Map</a></li>
+                    <li><a href="references.html"><i class="fas fa-book"></i>References</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 3D Rendering container -->
+    <div id="canvas-container"></div>
+
+    <div class="controls-container">
+        <div class="controls-main">
+            <!-- Model selection bar -->
+            <div class="model-selector">
+                <button onclick="loadModel('can1', '3ds')">Coke Can 1</button>
+                <button onclick="loadModel('can2')">Coke Can 2</button>
+                <button onclick="loadModel('can3')">Coke Can 3</button>
+                <button onclick="loadModel('airplane')">Airplane</button>
+                <button onclick="loadModel('boxman')">Box Man</button>
+
+                <div id="animation-list"></div>
+            </div>
+
+            <!-- control panel -->
+            <div class="controls">
+                <button onclick="toggleWireframe()">Toggle Wireframe</button>
+                <button onclick="rotateModel()">Rotate Model</button>
+                <button onclick="toggleLight()">Toggle Light</button>
+                <div id="textureControlButtons" style="display: none;">
+                    <button onclick="toggleTexture()">Toggle texture</button>
+                    <button id="textureBtn" onclick="document.getElementById('textureInput').click()">Customize texture</button>
+                    <input type="file" id="textureInput" accept="image/*" style="display: none;">
+                </div>
+                <!--button onclick="nextAnimation()">Next Animation</button-->
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/ui.js"></script>
+</body>
+</html>

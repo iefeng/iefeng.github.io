@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map - My Coca Cola Brand</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- Mapbox GL CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">My Coca Cola Brand</a>
+                <ul class="nav-links">
+                    <li><a href="/"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+                    <li><a href="map.html" class="active"><i class="fas fa-map-marked-alt"></i>Global Map</a></li>
+                    <li><a href="references.html"><i class="fas fa-book"></i>References</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Site Map Section -->
+    <section class="page-section">
+        <div class="content-container">
+            <h2 class="section-title"><i class="fas fa-network-wired"></i> Website Navigation Map</h2>
+            
+            <!-- Core Structure -->
+            <div class="sitemap-core">
+                <!-- Home Center -->
+                <div class="central-node">
+                    <div class="sitemap-node main-node">
+                        <i class="fas fa-home node-icon"></i>
+                        <h3>Home</h3>
+                        <p>Entry point of the website</p>
+                    </div>
+                </div>
+
+                <!-- Connection Lines -->
+                <div class="connector-horizontal"></div>
+                <div class="connector-vertical"></div>
+
+                <!-- Secondary Nodes -->
+                <div class="secondary-nodes">
+                    <div class="node-column">
+                        <a href="about.html" class="sitemap-node">
+                            <i class="fas fa-info-circle node-icon"></i>
+                            <h3>About</h3>
+                            <p>Project details and information</p>
+                        </a>
+                    </div>
+
+                    <div class="node-column">
+                        <a href="map.html" class="sitemap-node">
+                            <i class="fas fa-map-marked-alt node-icon"></i>
+                            <h3>Global Map</h3>
+                            <p>Interactive geographic visualization</p>
+                        </a>
+                    </div>
+
+                    <div class="node-column">
+                        <a href="references.html" class="sitemap-node">
+                            <i class="fas fa-book node-icon"></i>
+                            <h3>References</h3>
+                            <p>Research materials and resources</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

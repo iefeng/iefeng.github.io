@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>References - My Coca Cola Brand</title>
+    <!-- Modified CSS path -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- Include Three.js and related modules -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">My Coca Cola Brand</a>
+                <ul class="nav-links">
+                    <li><a href="/"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+                    <li><a href="map.html"><i class="fas fa-map-marked-alt"></i>Global Map</a></li>
+                    <li><a href="references.html" class="active"><i class="fas fa-book"></i>References</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="references" class="page-section">
+        <div class="content-container">
+            <h2 class="section-title"><i class="fas fa-book-open"></i> References</h2>
+            <div class="reference-list">
+                <!-- Reference Item -->
+                <div class="reference-item">
+                    <div class="ref-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="ref-content">
+                        <h3>Three.js Official Documentation</h3>
+                        <a href="https://threejs.org/docs/" target="_blank" class="ref-link">
+                            https://threejs.org/docs/
+                        </a>
+                        <p class="ref-desc">Core API reference and code examples for the WebGL framework</p>
+                    </div>
+                </div>
+    
+                <div class="reference-item">
+                    <div class="ref-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="ref-content">
+                        <h3><em>Interactive 3D Graphics</em></h3>
+                        <p class="ref-author">Author: Eric Haines</p>
+                        <p class="ref-desc">Fundamental theories and best practices for Web 3D development</p>
+                    </div>
+                </div>
+    
+                <div class="reference-item">
+                    <div class="ref-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="ref-content">
+                        <h3>GLTF Model Specification</h3>
+                        <a href="https://github.com/KhronosGroup/glTF" 
+                           target="_blank" 
+                           class="ref-link">
+                            GitHub - KhronosGroup/glTF
+                        </a>
+                        <p class="ref-desc">Official technical standard documentation for 3D model formats</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

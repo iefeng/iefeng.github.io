@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - My Coca Cola Brand</title>
+    <!-- Modified CSS path -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- Include Three.js and related modules -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">My Coca Cola Brand</a>
+                <ul class="nav-links">
+                    <li><a href="/"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i>About</a></li>
+                    <li><a href="map.html"><i class="fas fa-map-marked-alt"></i>Global Map</a></li>
+                    <li><a href="references.html"><i class="fas fa-book"></i>References</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Add these contents based on the existing page structure -->
+    <section id="about" class="page-section">
+        <div class="content-container">
+            <h2 class="section-title"><i class="fas fa-flask"></i> About Project</h2>
+            <div class="about-grid">
+                <!-- Technical Details Card -->
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>3D Core Technology</h3>
+                    <p>WebGL rendering engine built with Three.js, supporting:</p>
+                    <ul class="tech-list">
+                        <li>PBR Material Rendering</li>
+                        <li>Skeletal Animation System</li>
+                        <li>Real-time Shadow Calculation</li>
+                        <li>GLTF 2.0 Model Loading</li>
+                    </ul>
+                </div>
+
+                <!-- Feature Card -->
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Interactive Features</h3>
+                    <ul class="tech-list">
+                        <li>Orbit Controls</li>
+                        <li>Dynamic Lighting System</li>
+                        <li>Multi-animation Channel Switching</li>
+                    </ul>
+                </div>
+
+                <!-- Statistics Card -->
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <ul class="tech-list">
+                        <li>Load Time: ≤60ms</li>
+                        <li>Device Compatibility: 90%+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
